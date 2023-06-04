@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Star Wars</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('starwars_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .character {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+
+    .character img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .character-name {
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+      color: #fff;
+    }
+
+    .character-description {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 5px;
+      color: #fff;
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    h1 {
+      font-family: "Courier New", monospace;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 20px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <h1>Star Wars</h1>
+  <div class="btn-container">
+    <button id="show-characters-btn" class="btn">Mostrar personajes</button>
+  </div>
+  <div class="gallery" id="gallery-container"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
