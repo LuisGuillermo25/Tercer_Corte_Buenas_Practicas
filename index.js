@@ -42,3 +42,7 @@ function getCharacterId(characterUrl) {
   const urlParts = characterUrl.split('/');
   return urlParts[urlParts.length - 2];
 }
+
+function goBack() {
+  window.location.href = "index.html";
+}
